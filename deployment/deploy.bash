@@ -28,7 +28,8 @@ cd ~
 sudo systemctl enable ntp
 cd /usr/local/src
 sudo wget https://www.sumokoin.org/downloads/v0.1.2.0/sumokoin.linux.x64.v0-1-2-0.tar.bz2
-sudo tar -xvf https://www.sumokoin.org/downloads/v0.1.2.0/sumokoin.linux.x64.v0-1-2-0.tar.bz2 -C sumo/
+sudo mkdir sumo
+sudo tar -xvf sumokoin.linux.x64.v0-1-2-0.tar.bz2 -C sumo/
 sudo cp ~/nodejs-pool/deployment/sumo.service /lib/systemd/system/
 sudo useradd -m sumodaemon -d /home/sumodaemon
 sudo systemctl daemon-reload
